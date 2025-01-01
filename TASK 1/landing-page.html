@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <link rel="icon" href="favicon.jpg" type="image/jpeg">
+    <style>
+        body {
+            background-image: url('8351321.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            min-height: 100vh;
+            font-family: 'Pixelify Sans', serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 22px;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: white;
+            margin: 0;
+            font-size: 32px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav li {
+            margin: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #f0a500;
+            color: black;
+        }
+
+        .hero-content h1 {
+            padding-top: 200px;
+            text-align: center;
+            font-size: 33px;
+        }
+
+        .hero-content p {
+            padding-top: 10px;
+            text-align: center;
+            font-size: 22px;
+            color: white;
+        }
+
+        .buttons ul {
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .buttons li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #f0a500;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 18px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .buttons a:hover {
+            background-color: #d67e00;
+        }
+
+        .features {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 50px 30px;
+            text-align: center;
+        }
+
+        .features h2 {
+            color: white;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .features ul {
+            list-style: none;
+            padding: 0;
+            color: white;
+            font-size: 18px;
+        }
+
+        .features li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #f0a500;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .hero-content h1 {
+                font-size: 26px;
+                padding-top: 100px;
+            }
+
+            .hero-content p {
+                font-size: 18px;
+                padding-top: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav li {
+                margin-bottom: 10px;
+            }
+
+            .features h2 {
+                font-size: 24px;
+            }
+
+            .features ul {
+                font-size: 16px;
+            }
+
+            footer p, footer a {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 1024px) and (min-width: 601px) {
+            .hero-content h1 {
+                font-size: 30px;
+                padding-top: 150px;
+            }
+
+            .hero-content p {
+                font-size: 20px;
+                padding-top: 10px;
+            }
+
+            nav ul {
+                flex-direction: row;
+                justify-content: flex-start;
+                gap: 20px;
+            }
+
+            nav li {
+                margin: 0;
+            }
+
+            .features h2 {
+                font-size: 26px;
+            }
+
+            .features ul {
+                font-size: 18px;
+            }
+
+            footer p, footer a {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ADVENTURE GAME</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Get ready to dive into a world of magic...</h1>
+            <p>Adventure game is a free-to-play RPG game for Android devices, featuring a vast open world filled with monsters.</p>
+        </div>
+
+        <div class="buttons">
+            <ul>
+                <li><a href="#">Start Adventure</a></li>
+                <li><a href="#">Learn More</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Game Features</h2>
+        <ul>
+            <li>Expansive open world to explore</li>
+            <li>Engaging combat system with various weapons</li>
+            <li>Immersive storyline with multiple quests</li>
+            <li>Customizable characters and skills</li>
+            <li>Frequent updates and new content</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Adventure Game. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a>
+        </p>
+    </footer>
+</body>
+</html>
